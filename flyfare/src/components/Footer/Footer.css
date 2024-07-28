@@ -1,0 +1,76 @@
+/* General Styles */
+.footer99 {
+  background: linear-gradient(to right, #ffe0e8, #e0e8ff);
+  padding: 50px 20px;
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer98 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: black;
+}
+
+.image-content99 img {
+  max-width: 400px;
+}
+
+/* Quote Styles */
+.quote99 {
+  margin-bottom: 30px;
+}
+
+.quote99 h3 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-family: "Edu QLD Beginner", cursive;
+}
+
+.quote99 p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Message Styles */
+.message99 {
+  margin-bottom: 30px;
+  font-family: sans-serif, serif;
+  font-weight: normal;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  line-height: 2.5rem;
+}
+
+.message99 p {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .image-content99 {
+    display: none;
+  }
+
+  .footer99 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote99 h3 {
+    font-size: 30px;
+  }
+
+  .quote99 p,
+  .message0 p {
+    font-size: 16px;
+  }
+}

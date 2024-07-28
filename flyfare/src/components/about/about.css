@@ -1,0 +1,194 @@
+.who-we-are {
+  margin-top: 20px;
+
+}
+
+.content {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #e0e8ff, #ffe0e8);
+  font-family: sans-serif, Arial;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.text-name h2{
+font-size: 28px;
+font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 6vh;
+  position: absolute;
+  top: 0px;
+  margin-bottom: 90px;
+}
+.text-name {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+  
+}
+
+nav a.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.right .box {
+  margin-top: 4rem;
+}
+
+.box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 2.1;
+  color: #333;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  background-color:rgba(245, 11, 253, 0.1);
+  border-radius: 20px;
+  
+}
+
+/* .box2:hover {
+  background-color: rgb(248, 58, 67);
+  border-radius: 20px;
+}
+
+
+.box3:hover {
+  background-color: rgb(73, 26, 184);
+  border-radius: 20px;
+} */
+
+
+.box3 {
+  position: relative; /* Make the box3 relative to position the dot */
+}
+
+.circle-dot {
+  position: absolute;
+  top: -70px; /* Adjust to touch the top */
+  right: -150px; /* Adjust to touch the right */
+  width: 200px; /* Size of the dot */
+  height: 200px; /* Size of the dot */
+  border-radius: 50%;
+  border: 5px dashed; /* Thicker dashed border */
+  box-shadow: 0 4px 8px rgba(252, 136, 232, 0.1); /* Optional shadow for depth */
+  animation: rotate 25s linear infinite, gradientShift 5s linear infinite; /* Smooth rotation animation */
+  background-size: 200% 200%;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    border-color: #f093fb;
+  }
+  25% {
+    border-color: #f5576c;
+  }
+  50% {
+    border-color: #4facfe;
+  }
+  75% {
+    border-color: #43e97b;
+  }
+  100% {
+    border-color: #f093fb;
+  }
+}
+
+.box3:hover .circle-dot {
+  transform: scale(1.1); /* Slightly scale up on hover for effect */
+}
+
+/* Responsive styles */
+@media (max-width: 575px) {
+  .content {
+    flex-direction: column;
+    padding: 20px;
+    
+  }
+
+  .box {
+    width: 90%;
+    max-width: none;
+    margin: 20px 0;
+  }
+
+  .box3 .circle-dot {
+    display: none; /* Hide the circle dot on small devices */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .box {
+    width: 90%;
+    max-width: none;
+    margin: 20px 0;
+  }
+
+  .box3 .circle-dot {
+    display: none; /* Hide the circle dot on small devices */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content {
+    flex-direction: row;
+    padding: 30px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    flex-direction: row;
+    padding: 50px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+  }
+}
+

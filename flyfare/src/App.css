@@ -1,0 +1,71 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  #cursor .cursor--inner {
+    width: 18px; /* Smaller width for a dot */
+    height: 18px; /* Smaller height for a dot */
+    border-radius: 50%;
+    background-color: #1d213f; /* Fill color for the dot */
+    transform: translate(-50%, -50%);
+  }
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4vw;
+  line-height: 1.3;
+  text-decoration: none;
+  color: #1d213f;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}

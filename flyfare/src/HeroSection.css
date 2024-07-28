@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa, #9e74e2);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  margin: 0 5%; /* Adjusted margin for consistency */
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  max-width: 500px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #9e74e2;
+  border: 2px solid #9e74e2;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #9e74e2;
+  color: #fff;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%; /* Make sure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+
+}
+
+/* Responsive styles */
+@media (max-width: 575px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 30px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .image-content img {
+    max-height: 70vh;
+    width: 50vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 40px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .image-content img {
+    max-height: 70vh;
+    width: 50vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section {
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  .text-content h1 {
+    font-size: 45px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .image-content img {
+    max-height: 70vh;
+    width: 50vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    flex-direction: row;
+    padding: 50px;
+  }
+}

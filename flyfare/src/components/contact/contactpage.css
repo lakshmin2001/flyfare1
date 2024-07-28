@@ -1,0 +1,208 @@
+/* src/components/Contact/ContactPage.css */
+body {
+
+  background: linear-gradient(to bottom, #e4ddec, 20%, #c6adee 50%, #f7e3e3 100%);
+
+}
+.contact-page {
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+    max-width: 80%;
+    height: 84vh;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 330px;
+    background: linear-gradient(135deg, #f5f7fa, #7ba2e0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+  }
+  
+  .contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-header h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+    margin-right: 24px;
+  }
+  
+  .contact-information, .hours-of-operation {
+    font-family: sans-serif,serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 7vh;
+    background: linear-gradient(135deg, #f5f7fa, #bccce5);
+    padding: 20px;
+    margin-bottom: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+    max-height: 300vh;
+  }
+  
+  .contact-information h3, .hours-of-operation h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 60px;
+    text-decoration: underline;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 12vh;
+  }
+  
+  .space1{
+    margin-bottom: 12vh;
+  }
+
+
+  .contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contact-method p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .contact-method i {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .contact-method a:hover {
+    text-decoration: underline;
+  }
+  
+  .hours-of-operation p {
+    margin: 5px 0;
+    color: #555;
+  }
+  .footer12 {
+    width: 100%;
+    margin-top: 200vh;
+  }
+
+
+
+
+
+  
+
+  @media (max-width: 347px) {
+
+    .footer12 {
+      display: none;
+    }
+  }
+
+
+  @media (min-width: 348px) and (max-width: 476px) {
+
+    .footer12 {
+      width: 100%;
+      margin-top: 490vh;
+    }
+  }
+
+  @media (min-width: 475px) and (max-width: 475px) {
+
+    .footer12 {
+      width: 100%;
+      margin-top: 400vh;
+    }
+  }
+  
+
+/* Extra small devices (phones, 0px and up) */
+@media (min-width: 476px) and (max-width: 575px) {
+  /* Styles for extra small devices */
+  .footer12 {
+    width: 100%;
+    margin-top: 360vh;
+  }
+  
+}
+@media (min-width: 575px) and (max-width: 652px) {
+  /* Styles for small devices */
+  .footer12 {
+    width: 100%;
+    margin-top: 320vh;
+  }
+
+}
+
+/* Small devices (phones in landscape mode, 576px and up) */
+@media (min-width: 652px) and (max-width: 767px) {
+  /* Styles for small devices */
+  .footer12 {
+    width: 100%;
+    margin-top: 280vh;
+  }
+
+}
+
+/* Medium devices (tablets in portrait mode, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium devices */
+
+ 
+  .footer12 {
+    width: 100%;
+    margin-top: 255vh;
+  }
+}
+
+/* Large devices (tablets in landscape mode, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large devices */
+  .footer12 {
+    width: 100%;
+    margin-top: 250vh;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Styles for extra large devices */
+  .footer12 {
+    width: 100%;
+    margin-top: 215vh;
+  }
+}
+
+/* Extra extra large devices (ultra-wide screens, 1600px and up) */
+@media (min-width: 1600px) {
+  /* Styles for extra extra large devices */
+}
+
+
+
+

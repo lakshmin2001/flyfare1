@@ -1,0 +1,62 @@
+.counselor0 {
+    width: 20vw;
+    height: 198vh;
+    background-color: #fff;
+    padding: 3vh;
+    border: 0.1vw solid #ddd;
+    float: left;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    margin-left: 1.5vw;
+    overflow: hidden;
+   
+  }
+  
+  .counselor-card0 {
+
+    align-items: center;
+
+
+    text-align: center;
+    padding: 5vw 2vw;
+    background: linear-gradient(to right, #e0e8ff, #ffe0e8);
+    font-family: sans-serif,Arial,;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    border-radius: 5%;
+  
+  }
+  
+
+
+@media (max-width: 768px) {
+  .counselor {
+    display: none;
+  }
+}
+
+
+
+
+  /* .counselor-card0 img {
+    width: 88px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: -25vh;
+  }
+  
+  .counselor-info0 {
+    text-align: left;
+  }
+  
+  .counselor-info0 h3 {
+    margin: 0;
+  }
+  
+  .rating, .languages, .price {
+    margin-top: 10px;
+  }
+   */

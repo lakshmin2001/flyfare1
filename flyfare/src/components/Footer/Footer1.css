@@ -1,0 +1,113 @@
+/* General Footer Styles */
+/* .footer2 {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+} */
+
+.footerr {
+  color: rebeccapurple;
+  margin-bottom: 20px;
+}
+
+/* Footer Links */
+.footer-links2 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-links2 ul li {
+  font-size: 14px;
+  color: #333;
+}
+
+.address2 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Social Media Icons */
+.social-media2 {
+  margin-bottom: 20px;
+}
+
+.social-media2 i {
+  font-size: 20px;
+  color: #333;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-media2 i:hover {
+  transform: scale(1.1);
+  color: #555;
+}
+
+/* Copyright */
+.copyright2 {
+  font-size: 14px;
+  color: #666;
+}
+
+Responsive Styles
+@media (max-width: 575px) {
+  .footer-links2 ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links2 ul li {
+    font-size: 12px;
+  }
+
+  .address2,
+  .copyright2 {
+    font-size: 12px;
+  }
+
+  .social-media2 i {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-links2 ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .footer-links2 ul li {
+    font-size: 14px;
+  }
+
+  .address2,
+  .copyright2 {
+    font-size: 13px;
+  }
+
+  .social-media2 i {
+    font-size: 20px;
+  }
+}
+
+/* Styles for devices less than 768px wide */
+@media (max-width: 767px) {
+  .image-content2 img {
+    display: none;
+  }
+
+  .footer-links2 ul li,
+  .address2,
+  .copyright2 {
+    font-size: 12px;
+  }
+}

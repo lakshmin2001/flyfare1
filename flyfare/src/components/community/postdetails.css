@@ -1,0 +1,60 @@
+.post {
+    border: 0.2vw solid #ddd;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    background-color: #fff;
+    width: 90%;
+    align-items: center;
+  
+    padding: 5vw 2vw;
+    background: linear-gradient(to right, #e0e8ff, #ffe0e8);
+   border-radius: 3%;
+
+  
+  }
+
+ 
+ 
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+  }
+  
+  .post-title {
+    font-size: 1em;
+    margin: 1vw 0;
+    
+  }
+  
+  .post-content {
+    margin: 1vw 0;
+    font-size: small;
+  }
+  
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+
+  }
+  
+  .post-footer span {
+    box-sizing: border-box; /* Set box-sizing to border-box */
+  
+    border: 1px solid ;/* Set border properties */
+    background: #d9dbda; /* Set background color */
+    border-radius: 10%;
+    border-color: rgb(0, 0, 0) ;
+    padding: 0.2vw;
+    opacity: 0.5;
+  }
+
+
+
+
+
+
+
+
+  

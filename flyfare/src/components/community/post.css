@@ -1,0 +1,88 @@
+.post {
+  border: 0.2vw solid #ddd;
+  margin-bottom: 2vw;
+  background-color: #fff;
+  width: 90%;
+  align-items: center;
+  padding: 5vw 2vw;
+  background: linear-gradient(to right, #e0e8ff, #ffe0e8);
+  border-radius: 3%;
+}
+
+.post-header, .post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping of items if necessary */
+  gap: 1vw; /* Add space between items */
+  font-size: small;
+}
+
+.username, .days-ago {
+  display: flex;
+  align-items: center;
+}
+
+.user, .bookmark {
+  font-size: small;
+}
+
+.post-title {
+  font-size: 1em;
+  margin: 1vw 0;
+}
+
+.post-content {
+  margin: 1vw 0;
+  font-size: small;
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+  gap: 1vw; /* Adds space between elements */
+  font-size: small;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides overflow content */
+}
+
+.post-footer span, .share-button, .copied-message {
+  flex-shrink: 0; /* Prevents the items from shrinking */
+}
+
+.post-footer .share-button {
+  margin-left: auto; /* Push the share button to the end */
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.copy-link-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 0.5vw;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.share-button:hover .copy-link-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copied-message {
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+  font-size: small;
+}
